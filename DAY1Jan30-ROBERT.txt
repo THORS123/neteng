@@ -1,6 +1,6 @@
 !@@@CORE SWITCH SA TAAS
 config t
-   hostname COREtaas_
+   hostname COREtaas12
    enable secret pass
    service password-encryption
    no logging console
@@ -19,7 +19,7 @@ config t
 	 description MGMTDATA
    Int Vlan 10
      no shutdown
-	 ip add 10._.10.2 255.255.255.0
+	 ip add 10.12.10.2 255.255.255.0
 	 description WIRELESS
    Int Vlan 50
      no shutdown
@@ -32,7 +32,7 @@ config t
 
 !@@@LeafSwitchONLY
 config t
-   hostname COREbaba_
+   hostname COREbaba12
    enable secret pass
    service password-encryption
    no logging console
